@@ -54,6 +54,7 @@ const SearchTab = () => {
               <div key={index} className="h-72 w-full animate-pulse rounded-lg bg-gray-300"></div>
             ))}
       </div>
+      {!data && <p className="text-center">Let's find some books! 📚</p>}
     </>
   );
 };
