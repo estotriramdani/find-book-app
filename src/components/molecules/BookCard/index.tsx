@@ -18,7 +18,7 @@ const BookCard = ({ id, volumeInfo }: { volumeInfo: VolumeInfo; id: string }) =>
   };
 
   return (
-    <div key={id} className="card relative w-full bg-base-100 shadow-xl">
+    <div key={id} className="card relative w-full bg-base-100 shadow-xl overflow-hidden">
       <div className="absolute left-0 top-0 flex w-full justify-end p-3">
         <button className={`${isFav ? 'btn-primary' : ''} btn`} onClick={handleFavorite}>
           {isFav ? <i className="bi bi-heart-fill"></i> : <i className="bi bi-heart"></i>}
