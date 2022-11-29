@@ -11,6 +11,12 @@ const LovedTab = () => {
           <BookCard key={fav.id} id={fav.id} volumeInfo={fav.volumeInfo} />
         ))}
       </div>
+      {favorites.length === 0 && (
+        <p className="text-center">
+          <i className="bi bi-heart"></i> &nbsp;Go love some books! &nbsp;
+          <i className="bi bi-heart"></i>
+        </p>
+      )}
     </div>
   );
 };

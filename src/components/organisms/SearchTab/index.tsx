@@ -25,7 +25,7 @@ const SearchTab = () => {
   return (
     <>
       <form
-        className="mt-5 flex gap-2"
+        className="mt-5 flex justify-center gap-2"
         onSubmit={(e) => {
           e.preventDefault();
           setKeyword(tempKeyword);
@@ -48,7 +48,7 @@ const SearchTab = () => {
           <BookCard key={id} id={id} volumeInfo={volumeInfo} />
         ))}
         {isValidating &&
-          Array(6)
+          Array(8)
             .fill(0)
             .map((_, index) => (
               <div key={index} className="h-72 w-full animate-pulse rounded-lg bg-gray-300"></div>
